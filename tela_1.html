@@ -10,37 +10,112 @@
 
 <body>
 
-
-    <div class="botoes">
-        <button>💾 Save</button>
-        <button>❌ Cancel</button>
-        <button>✎ Edit</button>
+ <div class="top-header">
+        Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page "...FORWARDING_ORDER"
     </div>
 
-<body>
+    <div class="toolbar">
+        <button style="color: blue;">💾 Save</button>
+        <button style="color: red;">✖ Cancel</button>
+        <button>Edit</button>
+        <button>Check</button>
+        <button>Additional Functions ▼</button>
+    </div>
 
-<h2>NAVEGAÇÃO</h2>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-tabs">
+                <div class="tab active">Navigation</div>
+                <div class="tab">Repositories</div>
+            </div>
+            <table>
+                <thead>
+                    <tr><th>Page Type</th><th>Page Id</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Initial Page</td><td>INIT</td></tr>
+                    <tr class="selected"><td>Main Page</td><td>MAIN</td></tr>
+                    <tr><td>Dialog Box</td><td>ADDRESS_DET</td></tr>
+                    <tr><td>Dialog Box</td><td>ACT_LIST</td></tr>
+                </tbody>
+            </table>
+        </div>
 
-<table style="width:100%">
-  <tr>
-    <th>Page Type</th>
-    <th>Page id</th>
-    <th>Title</th>
-  </tr>
-  <tr>
-   <th>Intilial Page</th>
-    <th>INT</th>
-    <th>$OTR:?SCM-</th>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
+        <div class="content">
+            <div class="sidebar-tabs">
+                <div class="tab active">Overview Page Schema</div>
+                <div class="tab">Toolbar Schema</div>
+                <div class="tab">Wire Schema</div>
+            </div>
 
-<p>To understand the example better, we have added borders to the table.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Component</th>
+                            <th>Config ID</th>
+                            <th>Window Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>📁 Section: SECTION_1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="selected">
+                            <td>&nbsp;&nbsp;&nbsp;📄 UIBB: $OTR.../ADM_INFO</td>
+                            <td>FPM_FORM_UIBB_GL2</td>
+                            <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                            <td>FORM_WINDOW</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;&nbsp;&nbsp;📄 UIBB: $OTR.../TRQ_BUPA</td>
+                            <td>FPM_TABBED_UIBB</td>
+                            <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                            <td>TABBED_WINDOW</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="attributes-panel">
+                <div class="section-header">Attributes of UIBB: $OTR:/SCMTMS/UI_CMN/ADM_INFO</div>
+                <div class="form-grid">
+                    <div>
+                        <div class="form-group">
+                            <label>Window Name:</label>
+                            <input type="text" value="FORM_WINDOW">
+                        </div>
+                        <div class="form-group">
+                            <label>Config ID:</label>
+                            <input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA">
+                        </div>
+                        <div class="form-group">
+                            <label>Hidden Element:</label>
+                            <select>
+                                <option>Visible</option>
+                                <option selected>Hidden and Excluded from Event Loop</option>
+                                <option>Hidden but Processed in Event Loop</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input type="text" value="$OTR:/SCMTMS/UI_CMN/ADM_INFO">
+                        </div>
+                        <div class="form-group">
+                            <label>Style:</label>
+                            <input type="text" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
-
 </html>

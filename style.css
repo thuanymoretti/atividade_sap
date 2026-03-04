@@ -18,8 +18,156 @@
 }
 
 
-table, th, td {
-  border:1px solid black;
-}
+:root {
+            --sap-blue: #0064d1;
+            --sap-bg: #f2f2f2;
+            --sap-border: #bfbfbf;
+            --sap-header-bg: #e5e5e5;
+            --sap-selected: #0070d2;
+            --sap-text: #333;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            background-color: var(--sap-bg);
+            color: var(--sap-text);
+        }
+
+        /* Barra de Título Superior */
+        .top-header {
+            background: #ddd;
+            padding: 5px 10px;
+            border-bottom: 1px solid var(--sap-border);
+            font-weight: bold;
+        }
+
+        /* Barra de Ferramentas (Toolbar) */
+        .toolbar {
+            background: #eee;
+            padding: 5px;
+            border-bottom: 1px solid var(--sap-border);
+            display: flex;
+            gap: 5px;
+        }
+
+        button {
+            padding: 3px 8px;
+            border: 1px solid #999;
+            background: #fff;
+            cursor: pointer;
+            font-size: 11px;
+        }
+
+        /* Layout Principal */
+        .main-container {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+
+        /* Sidebar de Navegação */
+        .sidebar {
+            width: 250px;
+            border-right: 2px solid var(--sap-border);
+            background: #fff;
+            overflow-y: auto;
+        }
+
+        .sidebar-tabs {
+            background: #e5e5e5;
+            display: flex;
+            border-bottom: 1px solid var(--sap-border);
+        }
+
+        .tab {
+            padding: 5px 15px;
+            border-right: 1px solid var(--sap-border);
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background: #fff;
+            font-weight: bold;
+            border-top: 2px solid var(--sap-blue);
+        }
+
+        /* Área de Conteúdo */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Tabela de Elementos */
+        .table-container {
+            flex: 1;
+            overflow: auto;
+            background: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #e5e5e5;
+            text-align: left;
+            padding: 5px;
+            border: 1px solid var(--sap-border);
+            font-weight: normal;
+        }
+
+        td {
+            padding: 4px 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        tr.selected {
+            background-color: #e1f0fb;
+        }
+
+        /* Painel de Atributos (Inferior) */
+        .attributes-panel {
+            height: 250px;
+            border-top: 3px solid var(--sap-border);
+            background: #fff;
+            padding: 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .form-group label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+            color: #666;
+        }
+
+        .form-group input, .form-group select {
+            flex: 1;
+            padding: 3px;
+            border: 2px solid var(--sap-border);
+        }
+
+        .section-header {
+            background: #f8f8f8;
+            padding: 5px;
+            font-weight: bold;
+            border-bottom: 1px solid var(--sap-border);
+            margin-bottom: 10px;
+        }
 
 
