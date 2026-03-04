@@ -35,7 +35,7 @@
             color: var(--sap-text);
         }
 
-        /* Barra de Título Superior */
+
         .top-header {
             background: #ddd;
             padding: 5px 10px;
@@ -43,7 +43,7 @@
             font-weight: bold;
         }
 
-        /* Barra de Ferramentas (Toolbar) */
+
         .toolbar {
             background: #eee;
             padding: 5px;
@@ -60,13 +60,13 @@
             font-size: 11px;
         }
 
-        /* Layout Principal */
+
         .main-container {
             display: flex;
             height: calc(100vh - 70px);
         }
 
-        /* Sidebar de Navegação */
+
         .sidebar {
             width: 250px;
             border-right: 2px solid var(--sap-border);
@@ -92,7 +92,7 @@
             border-top: 2px solid var(--sap-blue);
         }
 
-        /* Área de Conteúdo */
+        
         .content {
             flex: 1;
             display: flex;
@@ -100,7 +100,7 @@
             overflow: hidden;
         }
 
-        /* Tabela de Elementos */
+
         .table-container {
             flex: 1;
             overflow: auto;
@@ -129,7 +129,7 @@
             background-color: #e1f0fb;
         }
 
-        /* Painel de Atributos (Inferior) */
+        
         .attributes-panel {
             height: 250px;
             border-top: 3px solid var(--sap-border);
